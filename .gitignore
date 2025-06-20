@@ -1,1 +1,14 @@
-node_modules
+# Ignore real .env files
+.env
+.env.*
+!*.env.example   # <-- this line allows all .env.example files
+
+# Node modules
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Ignore .env in client and server
+client/.env
+server/.env
+!server/.env.example
